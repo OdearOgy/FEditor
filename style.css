@@ -1,0 +1,19 @@
+
+
+.main {
+    max-width: 1640px;
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+}
+
+
+textarea[name="js-input"],
+div.output {
+    border: 2px solid #e4e4e4;
+    width: 100%;
+
+}
