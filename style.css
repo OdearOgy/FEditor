@@ -7,13 +7,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-
 }
 
 
-textarea[name="js-input"],
-div.output {
+textarea,
+iframe.output {
     border: 2px solid #e4e4e4;
     width: 100%;
-
+    height: 50vh;
+    outline: none;
+    padding: 0;
+    margin: 0;
 }
+
+textarea {
+    resize: none;
+}
+
+
