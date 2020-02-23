@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js editor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="main">
-        <div class="input">
-            <textarea name="js-input" id="jsinput"></textarea>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FEditor</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <section class="code code--grid">
+                <div class="code__wrapper">
+                    <textarea data-language="html" class="code__input resize--none code--html" name="html-input"></textarea>
+                </div>
+                <div class="code__wrapper">
+                    <textarea data-language="css" class="code__input resize--none code--css" name="css-input"></textarea>
+                </div>
+                <div class="code__wrapper">
+                    <textarea data-language="js" class="code__input resize--none code--js" name="js-input"></textarea>
+                </div>
+            </section>
+            <section class="preview">
+                <iframe class="output"></iframe>       
+            </section>
         </div>
-
-        <iframe class="output"></iframe>       
-    </div>
-    
-    <script src="script.js"></script>
-    
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
